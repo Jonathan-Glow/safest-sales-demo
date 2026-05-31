@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Safest — Übersicht · Müller Werkzeugbau GmbH</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="app">
+
+    <!-- ============================================ TOP BAR ============================================ -->
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark">S</div>
+        <div class="brand-name">Safest <span>Compliance</span></div>
+      </div>
+
+      <div class="customer-context">
+        <div class="customer-logo">MW</div>
+        <div>
+          <div class="customer-name">Müller Werkzeugbau GmbH</div>
+          <div class="customer-meta">Präzisionsteile · 18 Mitarbeiter</div>
+        </div>
+      </div>
+
+      <div class="topbar-actions">
+        <button class="consultant-badge" title="Ihr persönlicher Berater">
+          <div class="avatar primary">MB</div>
+          <span><span class="consultant-status"></span> Markus erreichbar</span>
+        </button>
+        <button class="icon-btn" aria-label="Benachrichtigungen">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+          <span class="dot"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- ============================================ SIDEBAR ============================================ -->
+    <aside class="sidebar">
+      <div class="sidebar-section">Arbeitsbereich</div>
+
+      <a href="index.html" class="nav-item active">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg>
+        Übersicht
+      </a>
+
+      <a href="geschaeftsfuehrer.html" class="nav-item">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-3-3.87"/><path d="M4 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><circle cx="10" cy="7" r="4"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        GF-Ansicht
+        <span class="nav-badge">3</span>
+      </a>
+
+      <a href="dokument.html" class="nav-item">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="14" y2="17"/></svg>
+        Dokumente
+      </a>
+
+      <a href="audit.html" class="nav-item">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Audit-Center
+      </a>
+
+      <div class="sidebar-footer">
+        <strong>🛡 Sicherheitsgarantie aktiv</strong>
+        Bei Audit-Nichtbestehen kostenlose Nachbesserung.
+      </div>
+    </aside>
+
+    <!-- ============================================ MAIN ============================================ -->
+    <main class="main">
+
+      <!-- ── HERO ────────────────────────────────────────── -->
+      <section class="hero fade-in">
+        <div class="hero-info">
+          <div class="eyebrow">Stand 30. Januar 2026</div>
+          <h1 class="hero-title">Guten Morgen, Herr Müller. <br />Ihre <em>ISO 9001</em> ist zu 67 % fertig.</h1>
+          <div class="progress-bar">
+            <div class="progress-fill" style="--target: 67%"></div>
+          </div>
+          <div class="progress-row">
+            <div><span class="progress-num">67</span><span class="faint mono"> / 100</span></div>
+            <div>Frau Schmidt arbeitet aktuell an <strong>Kapitel 9.1</strong></div>
+          </div>
+        </div>
+
+        <div class="hero-side">
+          <div class="eyebrow">Geplantes Zertifikat</div>
+          <div class="hero-side-date">18. März 2026</div>
+          <div class="hero-side-meta">in 47 Tagen</div>
+        </div>
+      </section>
+
+      <!-- ── KPI CARDS ───────────────────────────────────── -->
+      <section class="kpi-grid">
+        <div class="kpi-card fade-in delay-1">
+          <div class="kpi-label">Audit-Bereitschaft</div>
+          <div class="kpi-value">87<sub>%</sub></div>
+          <div class="kpi-meta"><span class="status-pill success">Würde bestehen</span></div>
+        </div>
+
+        <div class="kpi-card fade-in delay-2">
+          <div class="kpi-label">Offene Aufgaben</div>
+          <div class="kpi-value">3</div>
+          <div class="kpi-meta"><span class="status-pill warning">1 eilig</span> &middot; Nächste: <strong style="color:var(--text)">Kapitel 5.1</strong></div>
+        </div>
+
+        <div class="kpi-card fade-in delay-3">
+          <div class="kpi-label">Diese Woche</div>
+          <div class="kpi-value">14</div>
+          <div class="kpi-meta">Aktionen Ihres Teams &middot; Frau Schmidt vor 2 Std</div>
+        </div>
+      </section>
+
+      <!-- ── ACTIVITY FEED ───────────────────────────────── -->
+      <section class="feed-section fade-in delay-4">
+        <div class="feed-header">
+          <h2 class="section-title">Letzte Aktivitäten</h2>
+          <a href="#">Alle anzeigen →</a>
+        </div>
+        <ul class="feed-list">
+          <li class="feed-item">
+            <div class="feed-icon success">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="feed-content">
+              <div class="feed-text"><strong>Frau Schmidt</strong> hat Prozess „Wareneingang Präzisionsteile" freigegeben</div>
+            </div>
+            <div class="feed-time">vor 2 Std</div>
+          </li>
+
+          <li class="feed-item">
+            <div class="feed-icon primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+            </div>
+            <div class="feed-content">
+              <div class="feed-text"><strong>Markus</strong> hat 3 Arbeitsanweisungen für die Fertigung vorbereitet</div>
+            </div>
+            <div class="feed-time">vor 5 Std</div>
+          </li>
+
+          <li class="feed-item">
+            <div class="feed-icon accent">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <div class="feed-content">
+              <div class="feed-text"><strong>Markus</strong> hat eine Rückfrage zur Lieferanten-Bewertung beantwortet</div>
+            </div>
+            <div class="feed-time">gestern</div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- ── TRUST BANNER ────────────────────────────────── -->
+      <div class="trust-banner fade-in delay-5">
+        <div class="trust-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div>
+          <strong>Ihre Sicherheitsgarantie ist aktiv.</strong> Sollten Sie das Audit nicht bestehen, bessern wir ohne Mehrkosten nach.
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

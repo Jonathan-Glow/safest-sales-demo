@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Safest — Audit-Center · Müller Werkzeugbau GmbH</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="app">
+
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark">S</div>
+        <div class="brand-name">Safest <span>Compliance</span></div>
+      </div>
+      <div class="customer-context">
+        <div class="customer-logo">MW</div>
+        <div>
+          <div class="customer-name">Müller Werkzeugbau GmbH</div>
+          <div class="customer-meta">Präzisionsteile · 18 Mitarbeiter</div>
+        </div>
+      </div>
+      <div class="topbar-actions">
+        <button class="consultant-badge">
+          <div class="avatar primary">MB</div>
+          <span><span class="consultant-status"></span> Markus erreichbar</span>
+        </button>
+        <button class="icon-btn" aria-label="Benachrichtigungen">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+          <span class="dot"></span>
+        </button>
+      </div>
+    </header>
+
+    <aside class="sidebar">
+      <div class="sidebar-section">Arbeitsbereich</div>
+
+      <a href="index.html" class="nav-item">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg>
+        Übersicht
+      </a>
+      <a href="geschaeftsfuehrer.html" class="nav-item">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-3-3.87"/><path d="M4 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><circle cx="10" cy="7" r="4"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        GF-Ansicht
+        <span class="nav-badge">3</span>
+      </a>
+      <a href="dokument.html" class="nav-item">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="14" y2="17"/></svg>
+        Dokumente
+      </a>
+      <a href="audit.html" class="nav-item active">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Audit-Center
+      </a>
+
+      <div class="sidebar-footer">
+        <strong>🛡 Sicherheitsgarantie aktiv</strong>
+        Bei Audit-Nichtbestehen kostenlose Nachbesserung.
+      </div>
+    </aside>
+
+    <main class="main">
+
+      <!-- ── AUDIT HERO ────────────────────────────────── -->
+      <section class="audit-hero fade-in">
+        <div class="audit-hero-info">
+          <div class="eyebrow">Audit-Simulator</div>
+          <h1 class="audit-hero-title">Spielen Sie das Audit <em>vorher durch.</em></h1>
+          <p>Wir nutzen die echten Auditor-Fragen aus 2.847 dokumentierten Audits. So gehen Sie ohne Überraschungen ins reale Audit.</p>
+        </div>
+        <div class="audit-score">
+          <div class="eyebrow">Ihre Audit-Bereitschaft</div>
+          <div class="audit-score-num">87 %</div>
+          <div class="audit-score-bar"><div class="audit-score-bar-fill"></div></div>
+          <span class="status-pill success">Sie würden bestehen</span>
+        </div>
+      </section>
+
+      <!-- ── SIMULATOR ─────────────────────────────────── -->
+      <section class="simulator fade-in delay-1">
+        <div class="simulator-header">
+          <div class="eyebrow">Probelauf läuft</div>
+          <div class="simulator-counter">Frage 3 / 12</div>
+        </div>
+
+        <div class="audit-question">
+          <div class="audit-question-label">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+            Auditor-Frage
+          </div>
+          <p class="audit-question-text">„Wie stellen Sie sicher, dass Kundenanforderungen vollständig erfasst und verstanden werden?"</p>
+        </div>
+
+        <div class="audit-answer">
+          <div class="audit-answer-label">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Antwort aus Ihrem QMS
+          </div>
+
+          <p>Bei der <strong>Müller Werkzeugbau GmbH</strong> erfolgt die Erfassung von Kundenanforderungen über einen dreistufigen Prozess, dokumentiert in <strong>Prozess P-8.2 „Kundenkommunikation"</strong>:</p>
+
+          <ol>
+            <li>Erstkontakt-Briefing durch den Vertrieb mit standardisiertem Anforderungs-Formular</li>
+            <li>Technischer Workshop mit dem Kunden — Klärung von Toleranzen, Materialien und Liefertermin</li>
+            <li>Schriftliche Bestätigung durch die Projektleitung und Freigabe durch die Qualitätssicherung</li>
+          </ol>
+
+          <div class="audit-references">
+            <span>Belegdokument: P-8.2-Kundenkommunikation v2.1</span>
+            <span>Aufzeichnung: Anforderungs-Matrix je Auftrag</span>
+          </div>
+
+          <div class="audit-checks">
+            <span class="audit-check">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Antwort verifizierbar
+            </span>
+            <span class="audit-check">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Belegdokument vorhanden
+            </span>
+            <span class="audit-check">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Verantwortlichkeit klar
+            </span>
+          </div>
+        </div>
+
+        <div class="simulator-footer">
+          <button class="btn btn-ghost" id="prev-question">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+            Vorherige
+          </button>
+          <span class="mono faint" style="font-size:12px;">3 von 12</span>
+          <button class="btn btn-primary" id="next-question">
+            Nächste Frage
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </div>
+      </section>
+
+      <!-- ── GAP REPORT ────────────────────────────────── -->
+      <section class="gap-report fade-in delay-2">
+        <div class="eyebrow">Empfohlene Nachbesserungen</div>
+        <h2 class="section-title">2 kleine Punkte vor dem Audit. <span class="status-pill warning">Beide nicht kritisch</span></h2>
+
+        <div class="gap-list">
+          <article class="gap-card">
+            <div class="gap-card-info">
+              <div class="eyebrow">Kapitel 9.1.3</div>
+              <div class="gap-card-title">Datenanalyse</div>
+              <div class="gap-card-meta">Empfehlung: Quartalsweise Auswertung statt halbjährlich dokumentieren<span class="gap-card-time">~30 Min</span></div>
+            </div>
+            <button class="btn btn-ghost">Jetzt beheben →</button>
+          </article>
+
+          <article class="gap-card">
+            <div class="gap-card-info">
+              <div class="eyebrow">Kapitel 7.5.3</div>
+              <div class="gap-card-title">Kontrolle dokumentierter Informationen</div>
+              <div class="gap-card-meta">Empfehlung: Versionierungskonzept ergänzen<span class="gap-card-time">~15 Min</span></div>
+            </div>
+            <button class="btn btn-ghost">Jetzt beheben →</button>
+          </article>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

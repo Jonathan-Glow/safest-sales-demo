@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Safest — GF-Ansicht · Müller Werkzeugbau GmbH</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="app">
+
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark">S</div>
+        <div class="brand-name">Safest <span>Compliance</span></div>
+      </div>
+      <div class="customer-context">
+        <div class="customer-logo">MW</div>
+        <div>
+          <div class="customer-name">Müller Werkzeugbau GmbH</div>
+          <div class="customer-meta">Präzisionsteile · 18 Mitarbeiter</div>
+        </div>
+      </div>
+      <div class="topbar-actions">
+        <button class="consultant-badge">
+          <div class="avatar primary">MB</div>
+          <span><span class="consultant-status"></span> Markus erreichbar</span>
+        </button>
+        <button class="icon-btn" aria-label="Benachrichtigungen">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+          <span class="dot"></span>
+        </button>
+      </div>
+    </header>
+
+    <aside class="sidebar">
+      <div class="sidebar-section">Arbeitsbereich</div>
+
+      <a href="index.html" class="nav-item">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg>
+        Übersicht
+      </a>
+      <a href="geschaeftsfuehrer.html" class="nav-item active">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-3-3.87"/><path d="M4 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><circle cx="10" cy="7" r="4"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        GF-Ansicht
+        <span class="nav-badge">3</span>
+      </a>
+      <a href="dokument.html" class="nav-item">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="14" y2="17"/></svg>
+        Dokumente
+      </a>
+      <a href="audit.html" class="nav-item">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Audit-Center
+      </a>
+
+      <div class="sidebar-footer">
+        <strong>🛡 Sicherheitsgarantie aktiv</strong>
+        Bei Audit-Nichtbestehen kostenlose Nachbesserung.
+      </div>
+    </aside>
+
+    <main class="main">
+
+      <!-- ── DELEGATIONS-BLOCK ─────────────────────────── -->
+      <section class="delegation-block fade-in">
+        <div class="delegation-info">
+          <div class="eyebrow">Geschäftsführer-Ansicht</div>
+          <h2>Sie bekommen nur das, was <em>wirklich Ihre Entscheidung</em> braucht.</h2>
+          <p>Alles andere klärt Safest direkt mit Frau Schmidt. Sie können den Delegations-Modus jederzeit umstellen.</p>
+        </div>
+        <div class="toggle" id="delegation-toggle">
+          <span class="toggle-label">Delegation</span>
+          <div class="toggle-switch"></div>
+          <span class="toggle-label" style="color:var(--primary);font-weight:600;" id="delegation-state">AN</span>
+        </div>
+      </section>
+
+      <!-- ── ISO KAPITEL AMPEL ─────────────────────────── -->
+      <section class="kapitel-block fade-in delay-1">
+        <div class="eyebrow">ISO 9001 — Kapitel-Status</div>
+        <h2 class="section-title">6 von 7 Kapiteln stehen.</h2>
+
+        <ul class="kapitel-list">
+          <li class="kapitel-row">
+            <span class="kapitel-num">4</span>
+            <span class="kapitel-name">Kontext der Organisation</span>
+            <span class="status-pill success">Abgeschlossen</span>
+          </li>
+          <li class="kapitel-row">
+            <span class="kapitel-num">5</span>
+            <span class="kapitel-name">Führung</span>
+            <span class="status-pill warning">In Review — Sie</span>
+          </li>
+          <li class="kapitel-row">
+            <span class="kapitel-num">6</span>
+            <span class="kapitel-name">Planung</span>
+            <span class="status-pill success">Abgeschlossen</span>
+          </li>
+          <li class="kapitel-row">
+            <span class="kapitel-num">7</span>
+            <span class="kapitel-name">Unterstützung</span>
+            <span class="status-pill success">Abgeschlossen</span>
+          </li>
+          <li class="kapitel-row">
+            <span class="kapitel-num">8</span>
+            <span class="kapitel-name">Betrieb</span>
+            <span class="status-pill success">Abgeschlossen</span>
+          </li>
+          <li class="kapitel-row">
+            <span class="kapitel-num">9</span>
+            <span class="kapitel-name">Bewertung der Leistung</span>
+            <span class="status-pill warning">In Bearbeitung — Frau Schmidt</span>
+          </li>
+          <li class="kapitel-row">
+            <span class="kapitel-num">10</span>
+            <span class="kapitel-name">Verbesserung</span>
+            <span class="status-pill" style="background:var(--surface-warm);color:var(--text-faint);"><span style="background:var(--text-faint);width:6px;height:6px;border-radius:50%;display:inline-block;margin-right:6px;"></span>Noch nicht aktiv</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- ── AUFGABEN ──────────────────────────────────── -->
+      <section class="aufgaben-block fade-in delay-2">
+        <div class="eyebrow">Ihre Aufgaben diese Woche</div>
+        <h2 class="section-title">3 Sachen, zusammen ~8 Minuten.</h2>
+
+        <div class="aufgaben-list">
+          <article class="aufgabe-card urgent">
+            <div>
+              <div class="aufgabe-tag">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/></svg>
+                Eilig
+              </div>
+              <div class="aufgabe-title">5.1 Führung und Verpflichtung</div>
+              <div class="aufgabe-meta">Frau Schmidt wartet auf Ihre Freigabe<span class="aufgabe-time">~2 Min</span></div>
+            </div>
+            <a href="dokument.html" class="btn btn-cta">Jetzt freigeben
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </article>
+
+          <article class="aufgabe-card">
+            <div>
+              <div class="aufgabe-title">Audit-Termin bestätigen</div>
+              <div class="aufgabe-meta">Vorschlag: 18. März 2026, 10:00 Uhr<span class="aufgabe-time">1 Klick</span></div>
+            </div>
+            <button class="btn btn-ghost">Bestätigen ✓</button>
+          </article>
+
+          <article class="aufgabe-card">
+            <div>
+              <div class="aufgabe-title">Lieferanten-Liste Q4 — Stichproben-Approval</div>
+              <div class="aufgabe-meta">3 von 12 Lieferanten zur Bewertung<span class="aufgabe-time">~4 Min</span></div>
+            </div>
+            <button class="btn btn-ghost">Bewerten →</button>
+          </article>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
