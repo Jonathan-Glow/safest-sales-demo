@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QM-System — QM-Portal · GlowMedia GmbH</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="app">
+
+  <!-- ════════ SIDEBAR ════════ -->
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-mark">S</div>
+      <div class="brand-text">
+        <strong>Safest</strong>
+        <span>QM-Portal</span>
+      </div>
+    </div>
+
+    <div class="customer-block">
+      <div class="customer-logo">GM</div>
+      <div>
+        <div class="customer-block-name">GlowMedia GmbH</div>
+        <div class="customer-block-meta">ISO 9001:2015</div>
+      </div>
+    </div>
+
+    <div class="nav-label">Menü</div>
+
+    <a href="index.html" class="nav-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      Startseite
+    </a>
+
+    <a href="qm-system.html" class="nav-item active">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+      QM-System
+      <span class="nav-badge">64</span>
+    </a>
+
+    <nav class="nav-sub" id="side-sub">
+      <a href="#arbeitsbereich" data-view="arbeitsbereich">QM-Arbeitsbereich</a>
+      <a href="#praxisnachweise" data-view="praxisnachweise">QM-Praxisnachweise</a>
+      <a href="#system" data-view="system">QM-System</a>
+      <a href="#archiv" data-view="archiv">QM-System Archiv</a>
+    </nav>
+
+    <div class="sidebar-bottom">
+      <div class="sidebar-bottom-row">
+        <div class="avatar" style="background:#B45309;">M</div>
+        <div>
+          <strong>Markus · Ihr Berater</strong>
+          <span class="status-online">Erreichbar</span>
+        </div>
+      </div>
+      <p>Sicherheitsgarantie aktiv — bei Audit-Nichtbestehen kostenlose Nachbesserung.</p>
+    </div>
+  </aside>
+
+  <!-- ════════ TOPBAR ════════ -->
+  <header class="topbar">
+    <div class="topbar-search">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="text" placeholder="Dokumente durchsuchen…" />
+      <kbd>⌘K</kbd>
+    </div>
+    <div class="topbar-spacer"></div>
+    <div class="topbar-right">
+      <button class="icon-btn" aria-label="Benachrichtigungen">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+        <span class="dot"></span>
+      </button>
+      <button class="user-chip">
+        <div>
+          <span class="user-chip-name">Jonathan Glasow</span>
+          <span class="user-chip-role">Geschäftsführung</span>
+        </div>
+        <div class="avatar" style="background:#2D5DE0;">JG</div>
+      </button>
+    </div>
+  </header>
+
+  <!-- ════════ MAIN ════════ -->
+  <main class="main">
+
+    <div class="page-head fade">
+      <div>
+        <h1>QM-System</h1>
+        <div class="sub">Dokumentenlenkung nach ISO 9001 · GlowMedia GmbH</div>
+      </div>
+      <button class="btn btn-primary">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        Neues Dokument
+      </button>
+    </div>
+
+    <!-- TABS -->
+    <nav class="tabs fade d1" id="tabs">
+      <button class="tab" data-view="arbeitsbereich">QM-Arbeitsbereich <span class="count" id="count-ab"></span></button>
+      <button class="tab" data-view="praxisnachweise">QM-Praxisnachweise <span class="count" id="count-pn"></span></button>
+      <button class="tab" data-view="system">QM-System <span class="count" id="count-sys"></span></button>
+      <button class="tab" data-view="archiv">QM-System Archiv <span class="count" id="count-ar"></span></button>
+    </nav>
+
+    <!-- VIEW CONTAINER (JS-rendered) -->
+    <div id="view"></div>
+
+  </main>
+</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

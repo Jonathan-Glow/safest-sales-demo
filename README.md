@@ -1,70 +1,54 @@
-# Safest Sales Demo — Clickable Prototype
+# Safest QM-Portal — Clickable Sales-Demo
 
-Statischer HTML-Prototyp für Sales-Demos. Keine Build-Tools, keine Dependencies.
+Statischer HTML-Prototyp für Verkaufsgespräche mit KMU-Kunden, die an einer
+ISO-Zertifizierung interessiert sind. Zeigt, wie das QM-System des Kunden
+später aussieht: ordentlich, übersichtlich, delegierbar — kein Papierchaos.
+
+Keine Build-Tools, keine Dependencies.
 
 ## Starten
 
-**Option 1 — Direkt im Browser öffnen (einfachster Weg):**
-
 ```bash
+# Direkt öffnen
 open index.html
+
+# Oder lokaler Server
+python3 -m http.server 8765
 ```
 
-Funktioniert in jedem modernen Browser (Chrome, Safari, Firefox, Edge).
+Live: https://jonathan-glow.github.io/safest-sales-demo/
 
-**Option 2 — Lokaler Server (empfohlen für realistisches Verhalten):**
+## Aufbau
 
-```bash
-# Python
-python3 -m http.server 8000
+| Datei | Inhalt |
+|---|---|
+| `index.html` | **Startseite** — KPIs, offene Aufgaben, Aktivitäten, Schnellzugriff |
+| `qm-system.html` | **QM-System-Bereich** mit 4 Reitern (JS-gerendert, Hash-Routing) |
+| `data.js` | Alle Demo-Daten (Dokumente, Aufgaben, Nachweise, Archiv, Personen) |
+| `app.js` | Rendering, Tab-Routing, Suche, Status-Filter |
+| `styles.css` | Design-System (clean Business-SaaS, hell, tabellen-fokussiert) |
 
-# oder Node
-npx serve .
-```
+## Reiter im QM-System
 
-Dann: `http://localhost:8000`
+- **QM-Arbeitsbereich** — Dokumente in Bearbeitung (Entwürfe, Reviews, fällige Aufgaben)
+- **QM-Praxisnachweise** — ausgefüllte Formblätter als gelebte Nachweise
+- **QM-System** — Ordnerstruktur → Klick öffnet Tabellenansicht mit Suche + Status-Filter
+  - A-QM Handbuch (18 Dokumente)
+  - B-PA Prozessanweisungen (7)
+  - C-VA Verfahrensanweisungen (17)
+  - E-FB Formblätter (22)
+- **QM-System Archiv** — abgelöste Dokumentversionen (revisionssicher)
 
-## Screens
+Deep-Links über Hash: `qm-system.html#system/aqm`, `#arbeitsbereich`, `#praxisnachweise`, `#archiv`
 
-| Datei | Screen | Wow-Moment |
-|---|---|---|
-| `index.html` | Übersicht | „Das ist ja schon meins" — personalisierte Landing |
-| `geschaeftsfuehrer.html` | GF-Ansicht | „3 Aufgaben, 8 Minuten — der Rest läuft" |
-| `dokument.html` | Dokument-Detail | „Markus hat das schon geschrieben — mit meinem Firmennamen drin" |
-| `audit.html` | Audit-Simulator | „Ich kann das Audit vorher durchspielen" |
+## Demo-Daten
 
-Navigation zwischen Screens über die linke Sidebar.
+Dokumentstruktur und -namen entsprechen dem echten QM-System der GlowMedia GmbH
+(64 Dokumente). Status, Versionen, Daten und Personen (außer J. Glasow) sind
+fiktive Demo-Werte. Simuliertes Datum: 10. Juni 2026.
 
-## Dummy-Daten
+## Design
 
-Vorgegeben für die Demo (alles hartkodiert):
-
-- **Kunde:** Müller Werkzeugbau GmbH (Präzisionsteile, 18 MA)
-- **Geschäftsführer:** Herr Müller
-- **QM-Beauftragte:** Frau Schmidt
-- **Berater:** Markus Brandt (Avatar: MB)
-- **Zertifizierungs-Datum:** 18. März 2026
-- **Heutiges Datum (simuliert):** 30. Januar 2026 → 47 Tage Countdown
-- **Fortschritt:** 67 % · Audit-Bereitschaft: 87 %
-
-Für eine echte Demo werden diese Werte aus den Setting-Call-Daten per Find&Replace in den HTML-Dateien ersetzt — bis ein automatisierter Personalisierungs-Workflow steht.
-
-## Interaktive Elemente
-
-- **Fortschrittsbalken & Audit-Score:** animieren beim Page-Load
-- **Delegation-Toggle (GF-Ansicht):** klickbar, ändert AN ↔ AUS
-- **„Freigeben"-Buttons (Dokument):** zeigen Erfolg mit Pulse-Animation
-- **Audit-Simulator Vor/Zurück:** Counter springt durch 12 Fragen (Inhalt bleibt statisch)
-- **Sidebar-Navigation:** wechselt zwischen Screens
-
-## Design-System
-
-- **Schrift:** Geist (Sans), Geist Mono (Daten), Instrument Serif Italic (Hero-Akzente)
-- **Farben:** Warm-Cream Background · Tiefes Petrol Primary · Rust Accent
-- **Layout:** 240 px Sidebar · 68 px Topbar · max-width 1240 px im Main
-- **Schatten:** Sehr subtil, mehrlagig
-- **Radii:** 12 px Cards · 8 px Buttons · 6 px Inputs
-
-## Hosting
-
-Statische Files — kann direkt auf Vercel, Netlify, GitHub Pages oder jedem Static-Hosting laufen. Für personalisierte Live-Demos pro Lead: ein Build-Skript erzeugt eine eindeutige URL pro Setting-Call-Datensatz (z.B. `safest-demo.vercel.app/d/abc123`).
+- **Schrift:** Plus Jakarta Sans (UI) · Geist Mono (IDs, Versionen, Daten)
+- **Farben:** Helles Grau (#F6F7F9) · Weiß-Panels · Blau-Akzent (#2D5DE0)
+- **Stil:** Clean Business-SaaS — Tabellen, Status-Pills, Icon-Tiles
