@@ -16,7 +16,7 @@ open index.html
 python3 -m http.server 8765
 ```
 
-Live: https://jonathan-glow.github.io/qm-welt-sales-demo/
+Live: https://jonathan-glow.github.io/qm-welt-demo/
 
 ## Aufbau
 
